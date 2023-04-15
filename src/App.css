@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 * {
   margin: 0;
@@ -13,26 +15,44 @@
 }
 
 body {
-  font-family: var(--font-roboto);
-  background-color: #212426;
-}
+  font-family: 'Bebas Neue', cursive;
+  /* font-family: var(--font-roboto); */
+  background-color: #100F0F;
 
+}
+.movie div:nth-of-type(3) {
+  z-index: 2;
+  background-color: #000000;
+
+  padding: 16px 24px 24px 24px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
 .app {
   padding: 4rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Set a height for the container so the heading is centered vertically */
+  height: 200px;
+}
 h1 {
-  font-size: 3rem;
-  letter-spacing: 0.9px;
+  font-size: 6rem;
+  text-align: center;
+  letter-spacing: .9px;
   background: linear-gradient(
-    90deg,
-    rgba(249, 211, 180, 1) 0%,
-    rgba(249, 211, 180, 0) 100%
+    180deg,
+    rgb(153, 0, 0) 0%,
+    rgb(100, 13, 13) 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -41,15 +61,15 @@ h1 {
 }
 
 .search {
-  width: 71%;
-  margin: 4rem 0 2rem;
+  width: 70%;
+  margin: 0rem auto 3rem auto;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   padding: 1.5rem 1.75rem;
-  border-radius: 3rem;
+  border-radius: 5rem;
   background: #1f2123;
   -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
   box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
@@ -153,16 +173,7 @@ h1 {
   width: 100%;
 }
 
-.movie div:nth-of-type(3) {
-  z-index: 2;
-  background-color: #343739;
-  padding: 16px 24px 24px 24px;
 
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
 
 .movie div:nth-of-type(3) span {
   font-family: "Raleway", sans-serif;
@@ -175,7 +186,7 @@ h1 {
 
 .movie div:nth-of-type(3) h3 {
   margin-top: 5px;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Barlow', sans-serif;
   color: #f9d3b4;
 }
 
@@ -218,7 +229,7 @@ h1 {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
   .container {
