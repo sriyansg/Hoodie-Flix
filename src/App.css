@@ -59,6 +59,34 @@ h1 {
   -webkit-text-fill-color: transparent;
   width: fit-content;
 }
+/* For Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* For all browsers */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #333;
+}
+
+body:hover {
+  scrollbar-color: #777 #333;
+}
+
 
 .search {
   width: 70%;

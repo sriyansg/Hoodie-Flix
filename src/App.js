@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-
-
 // 51feda35
 import MovieCard from "./MovieCard";
 import './App.css';
@@ -9,15 +7,15 @@ import SearchIcon from './search.svg';
 const API_URL = 'http://www.omdbapi.com/?apikey=51feda35&';
 
 const App = () => {
-
+    
     const [movies, setMovies] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
-
 
     const searchMovies = async (searchTerm) => {
         const response = await fetch(`${API_URL}&s=${searchTerm}`);
         const data = await response.json();
         setMovies(data.Search);
+        console.log(data);
     }
     useEffect(() => {
         searchMovies('Action');

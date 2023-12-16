@@ -17,6 +17,7 @@ const MovieCard = ({movie}) => {
             <div>
                 <span>{movie.Type}</span>
                 <h3>{movie.Title}</h3>
+                <p>{movie.plot}</p>
             </div>
         </div>
     );
